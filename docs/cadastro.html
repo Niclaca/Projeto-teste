@@ -6,60 +6,55 @@
     <title>Cadastro</title>
     <link rel="stylesheet" href="./css/index.css">
 </head>
-
+<h1> Cadastro</h1>
 <body>
     <form action="https://webhook.site/fafbeaf7-5481-4947-b4ae-aa9d1410f56a">
    <main>
     <!---Div:nome,e-mail -->
-    <div>
+    <div class="cadastro">
+
         <fieldset>
       <p>
-            <label for="Nome">Nome:</label>
-            <input type="text" size="30" id="nome"><br>
+            <label for="nome">Nome:</label>
+            <input  type="text" size="30" id="nome" placeholder="Digite seu nome aqui" required> <br>
+        </p> 
+        <p>
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" size="30" id="sobrenome" placeholder="Digite seu sobrenome"required><br>
         </p> 
 
       <p>
             <label for="email"> Email:</label>
-            <input type="text" size="30" id="email"><br>
+            <input id="email" type="text" size="30" id="email" placeholder="Digite seu e-mail"required><br>
         </p>
 
         <p>
       
-                    <label for=" datanasc"> Data de Nascimento</label>
-            <input type="text" size="10" ide="datanasc"><br>
+                    <label for="datanasc"> Data de Nascimento:</label>
+            <input type="datetime-local" size="10" id="datanasc" placeholder="Digite sua idade"required><br>
         </p>
-        
-
-    </div>
-<div>
+        <p>
+      
+            <label for="senha"> Senha:</label>
+    <input type="password" size="10" id="senha" placeholder="Digite sua senha"required><br>
+</p>
+    
+    <select>
+        <option selected disabled value="">Seu genêro?</option>
+        <option value="Masculino">Maculino</option>
+        <option value="Feminino">Feminino</option>
+        <option value="Transgênero">Transgênero</option>
+        <option value="Nem uma das opções">Nem umas das opções</option>
+    </select>
     <p>
-    <label>Qual seu gênero</label>
+    <button type="submit"> Enviar</button>
 </p>
-   <p> <label>
-        <input type="radio" name="gênero" value="Masculino"> Masculino
-    </label>
-</p>
-<p>
-    <label> 
-        <input type="radio" name="gênero" value="Feminino"> Feminino
-    </label>
-</p>
-<p>
-    <label>
-        <input type="radio" name="gênero"
-        value="Trangênero"> Trangênero
-    </label>
-</p>
-<p> 
-    <label>
-        <input type="radio" name="gênero"
-        value="Nem uma das opções"> Nem uma das opções
-    </label>
-</p>  
+
+</form>
 </div>
    </main>
 </fieldset>
-<button type="submit"> Enviar</button>
-</form>
 </body>
+
+<a  href="./index.html" class="botao">Inicio</a>
 </html>

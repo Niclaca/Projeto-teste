@@ -14,18 +14,25 @@
     </header>
     <main>
         <form>
-            <label for="">Usuário</label>
-            <input type="text" class="boxtxt" value=""><br>
+           <div class="login">
+            <fieldset>
+           <p>
+                <label for="Úsuario" >Usuário:</label>
+                <input  type="text" size="30" id="Usuário" placeholder="Digite seu usuário" required> <br>
+            </p>
 
-            <label for="">Senha</label>
-            <input type="password" class="boxtxt" value=""><br>
-            
-            <input type="button" class="btnEnviar" value="Enviar"> 
- 
-            </label>
+            <p>
+            <label for="Senha" class="login">Senha:</label>
+            <input  type="password" size="30" id="Senha" placeholder="Digite sua senha" required> <br> 
+        </p>
+        <button type="button" onclick="alert">Login</button>
+
+        </fieldset>
+        
+        </div>
         </form>
-
     </main>
-
+    <a href="./index.html" class="botao">Inicio</a>
 </body>
+
 </html>
